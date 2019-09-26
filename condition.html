@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Biểu thức điều kiện</title>
+</head>
+<body>
+<h2>Kiểm tra chẵn lẻ</h2>
+<form action="">
+    <label for="number">Nhập số</label><br><br>
+    <input type="text" value="" id="number"><br><br>
+    <button type="button" id="btn" onclick="check()">Kiểm tra</button>
+</form>
+<script>
+    function check(){
+        let num = document.getElementById("number").value;
+        if (num%2==0){
+            alert(num+" là số chẵn");
+        }else{
+            alert(num+"là số lẻ");
+        }
+    }
+</script>
+</body>
+</html>
